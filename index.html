@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Safa Birthday Webpage</title>
+    <body>
+        <header>
+            <ul</ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png"id="mountains_behind">
+            <h2 id="text">HELLOO BEE</h2>
+            <img src="mountains_front.png"id="mountains_front">
+        </section>
+        <div class="sec" 
+             <h2>Happy Birthday Sayang!</h2>
+             <p> Selamat tanggal 24 ya sayaang, semua doa dan harapan yang terbaik buat kamu aamiin. Gimana gimana seru gak ulang tahunnya??
+                 semoga seru yaa. Oiya semoga waktu kamu lagi baca ini semuanya udah selesai yaa, abis itu tinggal istirahat deh kamu. Tapi sebelum bobo kita cerita dulu bentar yaa?
+                 kayaknya kalau nanti aku diwawancara apasih hobi baru aku, aku jawabnya mau cerita sama kamu sebelum istirahat wkwk. 
+                 <br><br> Oiya maaf banget kemaren kemaren aku terpaksa banget nanya macem macem terus bilangnya buat tugas padahal sebenernya buat ini hehe, aku pengen mastiin aja apa apa yang kamu suka sampe 
+                color pallete dari kotaknya aja aku pastiin dulu wkwkw maaf yaa. Ini buat satu tahun terakhir yaa, terima sama simpen kadonya okaay? This is not much but i hope you like it luvv.
+                <br><br> Happy anniversary juga yaa hehe. Gimana ni kesan pesannya? awas aja kalau jawabnya pake jawaban template seru dan insightful ya sialan. Disamping berantem berantemnya terutama bulan kemaren
+                aku seneng banget selama ini sama kamu. Makasi banyak ya buat semuanya. Semoga gak capek kamuu. Pokoknya no matter where the path leads us, semoga kita bisa bareng terus sampe nanti yang paling nanti.
+                <br><br> Thanks for always being my safe place, my partner, my best friend, my sister, and my favorite enemy hehe. I love you so much and i hope i get to say it each and every day. 
+                 <br><br><br><audio  controls autoplay="autoplay">
+                    <source src="bgmusic.mp3" type="audio/mpeg"/>
+                     </audio> </p>
+           </div>
+        </section>          
+    </body>
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front');
+        
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 0.25 + 'px';
+            mountains_behind.style.top = value * 0.4 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 3 + 'px';
+        })
+    </script>
+    </html>
